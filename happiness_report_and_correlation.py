@@ -2,7 +2,7 @@
 happiness_report_csv = pd.read_csv("worldwide_happiness_report.csv")
 #preprocessing
 
-useless_cols=[""]
+useless_cols=["Overall rank","Score","Generosity","Perceptions of corruption"]
 happiness_report_csv.drop(useless_cols,axis=1,inplace  = True)      #dropping useless colmns
 
 #setiing countries as index
